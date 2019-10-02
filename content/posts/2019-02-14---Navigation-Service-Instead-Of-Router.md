@@ -9,10 +9,10 @@ tags:
   - "Angular"
   - "JavaScript"
   - "Router"
-description: "When your browser extension or any other front end app needs to add a regular expression field, your back end teammate gave you api response like this:"
+description: "Unchangeable URL and complex component relationship block me from using Angular's Router."
 ---
 
-Recently I have been working on refactoring a vanilla javascript project using the framework Angular 6. During the time I organizing page logic, I found that there are some factors blocking me from using [Router](https://angular.io/guide/router) to do page navigation:
+Recently I have been working on refactoring a vanilla javascript project using the framework Angular 6. During the time of organizing page logic, I found that there are some factors blocking me from using [Router](https://angular.io/guide/router) to do page navigation:
 
 1. Unchangeable URL (deterministic):
 Now I am writing a browser extension popup. A Routing Module already exists in the project to redirect the extension page to background or popup. This routing module is not only responsible for my popup, also for others. It means that I cannot add a Routing Module in my popup module. 

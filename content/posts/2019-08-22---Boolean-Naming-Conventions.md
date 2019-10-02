@@ -7,7 +7,7 @@ slug: "/posts/boolean-naming-conventions/"
 category: "General Programming"
 tags:
   - "General Programming"
-description: "Start your boolean name with an auxiliary verb"
+description: "Start your boolean name with an auxiliary verb."
 ---
 
 There are a bunch of boolean variables in this function:
