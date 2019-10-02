@@ -8,8 +8,7 @@ category: "JavaScript"
 tags:
   - "JavaScript"
   - "Browser Extension"
-description: "When your browser extension or any other front end app needs to add a regular expression field, your back end teammate gave you api response like this:"
-socialImage: "/media/42-line-bible.jpg"
+description: "When your browser extension or any other front end app needs to add a regular expression field, your back end teammate gave you api response like this..."
 ---
 
 When your browser extension or any other front end app needs to add a regular expression field, your back end teammate gave you api response like this:
