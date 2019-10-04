@@ -17,10 +17,6 @@
         "graphql": true
     },
     "rules": {
-      "linebreak-style": [
-        "error",
-        "windows"
-      ],
       "comma-dangle": 0,
       "import/imports-first": 0,
       "global-require": 0,
