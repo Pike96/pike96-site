@@ -13,15 +13,17 @@ describe('IndexTemplate', () => {
     data: {
       ...allMarkdownRemark
     },
-    ...pageContext
+    ...pageContext,
+    ...siteMetadata,
+    ...allMarkdownRemark
   };
 
   beforeEach(() => {
     StaticQuery.mockImplementationOnce(
       ({ render }: RenderCallback) => (
-        render(siteMetadata)
+        render(props)
       ),
-      useStaticQuery.mockReturnValue(siteMetadata)
+      useStaticQuery.mockReturnValue(props)
     );
   });
 

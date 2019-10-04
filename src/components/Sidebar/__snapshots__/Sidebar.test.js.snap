@@ -21,7 +21,7 @@ exports[`Sidebar renders correctly 1`] = `
           width="75"
         />
       </a>
-      <h1
+      <h2
         className="author__title"
       >
         <a
@@ -30,7 +30,7 @@ exports[`Sidebar renders correctly 1`] = `
         >
           Test name
         </a>
-      </h1>
+      </h2>
       <p
         className="author__subtitle"
       >
@@ -75,6 +75,28 @@ exports[`Sidebar renders correctly 1`] = `
         </li>
       </ul>
     </nav>
+    <ul>
+      <li>
+        <a
+          href="/tag/test-0/"
+        >
+          test_0
+           (
+          1
+          )
+        </a>
+      </li>
+      <li>
+        <a
+          href="/tag/test-1/"
+        >
+          test_1
+           (
+          2
+          )
+        </a>
+      </li>
+    </ul>
     <div
       className="contacts"
     >

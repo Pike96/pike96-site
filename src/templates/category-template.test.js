@@ -13,15 +13,17 @@ describe('CategoryTemplate', () => {
     data: {
       ...allMarkdownRemark
     },
-    ...pageContext
+    ...pageContext,
+    ...allMarkdownRemark,
+    ...siteMetadata
   };
 
   beforeEach(() => {
     StaticQuery.mockImplementationOnce(
       ({ render }: RenderCallback) => (
-        render(siteMetadata)
+        render(props)
       ),
-      useStaticQuery.mockReturnValue(siteMetadata)
+      useStaticQuery.mockReturnValue(props)
     );
   });
 

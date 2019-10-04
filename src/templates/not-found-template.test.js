@@ -4,15 +4,21 @@ import renderer from 'react-test-renderer';
 import { useStaticQuery, StaticQuery } from 'gatsby';
 import NotFoundTemplate from './not-found-template';
 import siteMetadata from '../../jest/__fixtures__/site-metadata';
+import allMarkdownRemark from '../../jest/__fixtures__/all-markdown-remark';
 import type { RenderCallback } from '../types';
 
 describe('NotFoundTemplate', () => {
+  const props = {
+    ...siteMetadata,
+    ...allMarkdownRemark
+  };
+
   beforeEach(() => {
     StaticQuery.mockImplementationOnce(
       ({ render }: RenderCallback) => (
-        render(siteMetadata)
+        render(props)
       ),
-      useStaticQuery.mockReturnValue(siteMetadata)
+      useStaticQuery.mockReturnValue(props)
     );
   });
 

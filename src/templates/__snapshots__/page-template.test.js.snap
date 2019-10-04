@@ -78,6 +78,28 @@ exports[`PageTemplate renders correctly 1`] = `
           </li>
         </ul>
       </nav>
+      <ul>
+        <li>
+          <a
+            href="/tag/test-0/"
+          >
+            test_0
+             (
+            1
+            )
+          </a>
+        </li>
+        <li>
+          <a
+            href="/tag/test-1/"
+          >
+            test_1
+             (
+            2
+            )
+          </a>
+        </li>
+      </ul>
       <div
         className="contacts"
       >

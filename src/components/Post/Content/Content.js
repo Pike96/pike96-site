@@ -6,10 +6,14 @@ import Tags from '../Tags';
 
 type Props = {
   body: string,
-  title: string
+  title: string,
+  fields: Node.fields,
+  frontmatter: Node.frontmatter,
 };
 
-const Content = ({ body, title, fields, frontmatter }: Props) => {
+const Content = ({
+  body, title, fields, frontmatter
+}: Props) => {
   const { tagSlugs } = fields;
   const { tags, date } = frontmatter;
 

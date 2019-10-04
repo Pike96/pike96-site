@@ -9,21 +9,23 @@ import pageContext from '../../jest/__fixtures__/page-context';
 import type { RenderCallback } from '../types';
 
 describe('TagTemplate', () => {
-  beforeEach(() => {
-    StaticQuery.mockImplementationOnce(
-      ({ render }: RenderCallback) => (
-        render(siteMetadata)
-      ),
-      useStaticQuery.mockReturnValue(siteMetadata)
-    );
-  });
-
   const props = {
     data: {
       ...allMarkdownRemark
     },
-    ...pageContext
+    ...pageContext,
+    ...allMarkdownRemark,
+    ...siteMetadata
   };
+
+  beforeEach(() => {
+    StaticQuery.mockImplementationOnce(
+      ({ render }: RenderCallback) => (
+        render(props)
+      ),
+      useStaticQuery.mockReturnValue(props)
+    );
+  });
 
   it('renders correctly', () => {
     const tree = renderer.create(<TagTemplate {...props} />).toJSON();
