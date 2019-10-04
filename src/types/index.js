@@ -22,20 +22,24 @@ export type PageContext = {
   hasNextPage: boolean
 };
 
+export type Fields = {
+  slug: string,
+  categorySlug?: string,
+  tagSlugs?: string[]
+}
+
+export type FrontMatter = {
+  date: string,
+  description?: string,
+  category?: string,
+  tags?: string[],
+  title: string,
+  socialImage?: string
+}
+
 export type Node = {
-  fields: {
-    slug: string,
-    categorySlug?: string,
-    tagSlugs?: string[]
-  },
-  frontmatter: {
-    date: string,
-    description?: string,
-    category?: string,
-    tags?: string[],
-    title: string,
-    socialImage?: string
-  },
+  fields: Fields,
+  frontmatter: FrontMatter,
   html: string,
   id: string
 };

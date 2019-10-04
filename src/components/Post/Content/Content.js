@@ -3,12 +3,13 @@ import React from 'react';
 import styles from './Content.module.scss';
 import Meta from '../Meta';
 import Tags from '../Tags';
+import type { Fields, FrontMatter } from '../../../types';
 
 type Props = {
   body: string,
   title: string,
-  fields: Node.fields,
-  frontmatter: Node.frontmatter,
+  fields: Fields,
+  frontmatter: FrontMatter
 };
 
 const Content = ({
