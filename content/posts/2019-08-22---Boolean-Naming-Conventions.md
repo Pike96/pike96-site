@@ -82,7 +82,7 @@ Long. The name is too long.
 
 In my project, `should` is used quite frequently. It will be hard to read if it's hard to abbreviate or omit some words in the name. (e.g. `shouldTrumpFireFedChairmanIn2019Sep`)
 
-If the logic is long, it will be more pain:
+If the logic is long, it will be more painful:
 ```
 if (!shouldTrumpFireFedChairmanIn2019Sep || !shouldTrumpFireFedChairmanIn2019Oct) {
 ```
