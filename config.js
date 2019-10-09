@@ -18,7 +18,7 @@ module.exports = {
   ],
   author: {
     name: 'Pike96',
-    photo: '/photo.png',
+    photo: '/photo.svg',
     bio: 'Front-End Engineer @ Los Angeles',
     contacts: {
       email: '',
