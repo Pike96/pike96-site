@@ -28,27 +28,33 @@ Boom. Doesn't work. Debug it: Boom. All backslashes are gone.
 Let do run these 3 snippets first:
 ```js
 > var pornRgx1 = "https?:\/\/www\.pornhub\.com\/video\/search\?search="
-<* undefined
+< undefined
+
 > console.log(pornRgx1)
-<* https?://www.pornhub.com/video/search?search=
+< https?://www.pornhub.com/video/search?search=
+
 > "https://www.pornhub.com/video/search?search=ella+knox".search(pornRgx1)
 <* -1
 ```
 ```js
 > var pornRgx2 = "https?:\\/\\/www\\.pornhub\\.com\\/video\\/search\\?search="
-<* undefined
+< undefined
+
 > console.log(pornRgx2)
-<* https?:\/\/www\.pornhub\.com\/video\/search\?search=
+< https?:\/\/www\.pornhub\.com\/video\/search\?search=
+
 > "https://www.pornhub.com/video/search?search=ella+knox".search(pornRgx1)
-<* 0
+< 0
 ```
 ```js
 > var pornRgx3 = "https?:\/\/www\.pornhub\.com"
-<* undefined
+< undefined
+
 > console.log(pornRgx3)
-<* https?://www.pornhub.com
+< https?://www.pornhub.com
+
 > "https://www.pornhub.com/video/search?search=ella+knox".search(pornRgx3)
-<* 0
+< 0
 ```
 `pornRgx1` doesn't work, but `pornRgx2` and `pornRgx3` do.
 

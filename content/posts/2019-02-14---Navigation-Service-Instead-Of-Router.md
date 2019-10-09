@@ -31,7 +31,8 @@ import { Constants } from  './constants';
   providedIn: 'root'
 })
 export class NavService {
-  private _navIndex: BehaviorSubject<number> = new BehaviorSubject<number>(Constants.DEFAULT_VIEW_INDEX);
+  private _navIndex: BehaviorSubject<number> = 
+    new BehaviorSubject<number>(Constants.DEFAULT_VIEW_INDEX);
   navIndex: Observable<number> = this._navIndex.asObservable();
 
 constructor() { }
