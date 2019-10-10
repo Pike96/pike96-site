@@ -7,7 +7,7 @@ module.exports = {
   subtitle: 'Front-End Engineer @ Los Angeles',
   copyright: '© All rights reserved.',
   disqusShortname: '',
-  postsPerPage: 4,
+  postsPerPage: 5,
   googleAnalyticsId: '',
   useKatex: false,
   menu: [

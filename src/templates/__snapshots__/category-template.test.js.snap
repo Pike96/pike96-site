@@ -16,24 +16,28 @@ exports[`CategoryTemplate renders correctly 1`] = `
         <a
           href="/"
         >
-          <img
-            alt="Test name"
-            className="author__photo"
-            height="75"
-            src="/test.jpg"
-            width="75"
-          />
-        </a>
-        <h2
-          className="author__title"
-        >
-          <a
-            className="author__title-link"
-            href="/"
+          <div
+            className="author__name-and-photo"
           >
-            Test name
-          </a>
-        </h2>
+            <img
+              alt="Test name"
+              className="author__photo"
+              height="75"
+              src="/test.jpg"
+              width="75"
+            />
+            <h2
+              className="author__title"
+            >
+              <a
+                className="author__title-link"
+                href="/"
+              >
+                Test name
+              </a>
+            </h2>
+          </div>
+        </a>
         <p
           className="author__subtitle"
         >
