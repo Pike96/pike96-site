@@ -30,6 +30,7 @@
 
     &-description {
       font-size: $typographic-base-font-size;
+      font-style: italic;
       @include line-height(1);
       @include margin-bottom(.75);
     }
