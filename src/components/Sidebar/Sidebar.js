@@ -20,23 +20,25 @@ const Sidebar = ({ isIndex }: Props) => {
   return (
     <div className={styles['sidebar']}>
       <div className={styles['sidebar__inner']}>
-        <Author author={author} isIndex={isIndex} />
-        <Menu menu={menu} />
-        <ul className={styles['sidebar__tags-list']}>
-          {tags.map((tag) => (
-            <li className={styles['sidebar__tags-list-item']} key={tag.fieldValue}>
-              <Link
-                to={`/tag/${kebabCase(tag.fieldValue)}/`}
-                className={styles['sidebar__tags-list-item-link']}
-                activeClassName={styles['sidebar__tags-list-item-link--active']}
-              >
-                {tag.fieldValue} ({tag.totalCount})
-              </Link>
-            </li>
-          ))}
-        </ul>
-        <Contacts contacts={author.contacts} />
-        <Copyright copyright={copyright} />
+        <div className={styles['sidebar__inner-fixed']}>
+          <Author author={author} isIndex={isIndex} />
+          <Menu menu={menu} />
+          <ul className={styles['sidebar__tags-list']}>
+            {tags.map((tag) => (
+              <li className={styles['sidebar__tags-list-item']} key={tag.fieldValue}>
+                <Link
+                  to={`/tag/${kebabCase(tag.fieldValue)}/`}
+                  className={styles['sidebar__tags-list-item-link']}
+                  activeClassName={styles['sidebar__tags-list-item-link--active']}
+                >
+                  {tag.fieldValue} ({tag.totalCount})
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <Contacts contacts={author.contacts} />
+          <Copyright copyright={copyright} />
+        </div>
       </div>
     </div>
   );

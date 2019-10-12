@@ -23,3 +23,9 @@
         @content
     }
 }
+
+@mixin breakpoint-max{
+    @media screen and (min-width: $layout-width) {
+        @content
+    }
+}
