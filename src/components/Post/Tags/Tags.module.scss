@@ -23,7 +23,8 @@
         height: $button-height;
         padding: 0 24px;
         line-height: $button-height;
-        border: 1px solid $color-gray-border;
+        border: 1.2px solid $color-gray-border;
+        box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
         text-decoration: none;
         border-radius: $button-border-radius;
         color: $color-base;

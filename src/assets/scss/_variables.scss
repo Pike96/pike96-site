@@ -3,13 +3,13 @@
  */
 
 // Colors
-$color-base: #222;
+$color-base: #333;
 $color-primary: #5D93FF;
-$color-secondary: #F7A046;
+$color-secondary: #F07817;
 
 $color-white: #FFF;
 $color-gray: lighten($color-base, 40%);
-$color-gray-border: lighten($color-base, 77%);
+$color-gray-border: lighten($color-base, 70%);
 $color-gray-bg: lighten($color-base, 79%);
 
 // Typographic
@@ -31,6 +31,7 @@ $typographic-leading: round(16 * ($typographic-root-font-size / 100) * $typograp
 // Buttons
 $button-height: 35px;
 $button-border-radius: 20px;
+$small-button-border-radius: 15px;
 
 // Layout
 $layout-post-single-width: 1100px;

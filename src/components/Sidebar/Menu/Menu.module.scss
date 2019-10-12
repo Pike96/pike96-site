@@ -15,20 +15,16 @@
 
       &-link {
         font-family: $typographic-header-font-family;
-        font-size: $typographic-base-font-size;
-        color: $typographic-base-font-color;
+        font-size: 19px;
+        color: $color-primary;
         font-weight: normal;
         border: 0;
 
         &:hover,
-        &:focus {
-          color: $color-primary;
-          border-bottom: 1px solid $color-primary;
-        }
-
+        &:focus,
         &--active {
-          color: $color-base;
-          border-bottom: 1px solid $color-base;
+          color: $color-secondary;
+          border-bottom: 1px solid $color-secondary;
         }
 
       }

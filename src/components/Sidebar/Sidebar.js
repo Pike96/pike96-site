@@ -22,10 +22,14 @@ const Sidebar = ({ isIndex }: Props) => {
       <div className={styles['sidebar__inner']}>
         <Author author={author} isIndex={isIndex} />
         <Menu menu={menu} />
-        <ul>
+        <ul className={styles['sidebar__tags-list']}>
           {tags.map((tag) => (
-            <li key={tag.fieldValue}>
-              <Link to={`/tag/${kebabCase(tag.fieldValue)}/`}>
+            <li className={styles['sidebar__tags-list-item']} key={tag.fieldValue}>
+              <Link
+                to={`/tag/${kebabCase(tag.fieldValue)}/`}
+                className={styles['sidebar__tags-list-item-link']}
+                activeClassName={styles['sidebar__tags-list-item-link--active']}
+              >
                 {tag.fieldValue} ({tag.totalCount})
               </Link>
             </li>

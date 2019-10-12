@@ -82,9 +82,14 @@ exports[`NotFoundTemplate renders correctly 1`] = `
           </li>
         </ul>
       </nav>
-      <ul>
-        <li>
+      <ul
+        className="sidebar__tags-list"
+      >
+        <li
+          className="sidebar__tags-list-item"
+        >
           <a
+            className="sidebar__tags-list-item-link"
             href="/tag/test-0/"
           >
             test_0
@@ -93,8 +98,11 @@ exports[`NotFoundTemplate renders correctly 1`] = `
             )
           </a>
         </li>
-        <li>
+        <li
+          className="sidebar__tags-list-item"
+        >
           <a
+            className="sidebar__tags-list-item-link"
             href="/tag/test-1/"
           >
             test_1
