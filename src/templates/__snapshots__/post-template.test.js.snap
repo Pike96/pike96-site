@@ -83,15 +83,11 @@ exports[`PostTemplate renders correctly 1`] = `
           Test bio
           <a
             className="author__bio-twitter"
-            href="https://www.linkedin.com/in/undefined"
+            href="https://www.facebook.com/undefined"
             rel="noopener noreferrer"
             target="_blank"
           >
-            Ping 
-            <strong>
-              Test name
-            </strong>
-             on Linkedin
+            Ping me on Facebook
           </a>
         </p>
       </div>

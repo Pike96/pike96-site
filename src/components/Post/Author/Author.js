@@ -13,11 +13,11 @@ const Author = () => {
         {author.bio}
         <a
           className={styles['author__bio-twitter']}
-          href={getContactHref('linkedin', author.contacts.linkedin)}
+          href={getContactHref('facebook', author.contacts.facebook)}
           rel="noopener noreferrer"
           target="_blank"
         >
-          Ping <strong>{author.name}</strong> on Linkedin
+          Ping me on Facebook
         </a>
       </p>
     </div>

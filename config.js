@@ -22,7 +22,7 @@ module.exports = {
     bio: 'Front-End Engineer @ Los Angeles',
     contacts: {
       email: '',
-      facebook: '',
+      facebook: 'pike96lin',
       telegram: '',
       twitter: '',
       github: 'Pike96',

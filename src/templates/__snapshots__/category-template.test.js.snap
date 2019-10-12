@@ -321,12 +321,6 @@ exports[`CategoryTemplate renders correctly 1`] = `
             >
               test_0
             </p>
-            <a
-              className="feed__item-readmore"
-              href="/test_0"
-            >
-              Read
-            </a>
           </div>
           <div
             className="feed__item"
@@ -369,12 +363,6 @@ exports[`CategoryTemplate renders correctly 1`] = `
             >
               test_1
             </p>
-            <a
-              className="feed__item-readmore"
-              href="/test_1"
-            >
-              Read
-            </a>
           </div>
         </div>
         <div
@@ -388,7 +376,7 @@ exports[`CategoryTemplate renders correctly 1`] = `
               href="/page/1"
               rel="prev"
             >
-              ← PREV
+              &lt; PREV
             </a>
           </div>
           <div
@@ -399,7 +387,7 @@ exports[`CategoryTemplate renders correctly 1`] = `
               href="/page/3"
               rel="next"
             >
-              → NEXT
+              NEXT &gt;
             </a>
           </div>
         </div>

@@ -4,6 +4,7 @@
 .pagination {
   @include margin-top(2);
   display: flex;
+  font-family: $typographic-header-font-family;
 
   &__prev {
     width: 50%;
