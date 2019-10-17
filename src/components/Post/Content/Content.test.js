@@ -10,7 +10,6 @@ describe('Content', () => {
       title: 'test',
       fields: {
         slug: '/test',
-        categorySlug: '/test-category',
         tagSlugs: [
           '/test_0',
           '/test_1'

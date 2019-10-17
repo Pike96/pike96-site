@@ -20,13 +20,19 @@ exports[`Feed renders correctly 1`] = `
         className="feed__item-meta-divider"
       />
       <span
-        className="feed__item-meta-category"
+        className="feed__item-meta-tag"
       >
         <a
-          className="feed__item-meta-category-link"
-          href="/test_0"
+          className="feed__item-meta-tag-link"
+          href="/tag/test-1"
         >
-          test_0
+          test-1
+        </a>
+        <a
+          className="feed__item-meta-tag-link"
+          href="/tag/test-2"
+        >
+          test-2
         </a>
       </span>
     </div>
@@ -62,13 +68,19 @@ exports[`Feed renders correctly 1`] = `
         className="feed__item-meta-divider"
       />
       <span
-        className="feed__item-meta-category"
+        className="feed__item-meta-tag"
       >
         <a
-          className="feed__item-meta-category-link"
-          href="/test_1"
+          className="feed__item-meta-tag-link"
+          href="/tag/test-1"
         >
-          test_1
+          test-1
+        </a>
+        <a
+          className="feed__item-meta-tag-link"
+          href="/tag/test-2"
+        >
+          test-2
         </a>
       </span>
     </div>

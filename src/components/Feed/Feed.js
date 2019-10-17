@@ -2,6 +2,7 @@
 import React from 'react';
 import moment from 'moment';
 import { Link } from 'gatsby';
+import kebabCase from 'lodash/kebabCase';
 import type { Edges } from '../../types';
 import styles from './Feed.module.scss';
 
@@ -18,8 +19,10 @@ const Feed = ({ edges }: Props) => (
             {moment(edge.node.frontmatter.date).format('MMMM YYYY')}
           </time>
           <span className={styles['feed__item-meta-divider']} />
-          <span className={styles['feed__item-meta-category']}>
-            <Link to={edge.node.fields.categorySlug} className={styles['feed__item-meta-category-link']}>{edge.node.frontmatter.category}</Link>
+          <span className={styles['feed__item-meta-tag']}>
+            {edge.node.frontmatter.tags.map((tag) => (
+              <Link to={`/tag/${kebabCase(tag)}`} className={styles['feed__item-meta-tag-link']}>{tag}</Link>
+            ))}
           </span>
         </div>
         <h2 className={styles['feed__item-title']}>

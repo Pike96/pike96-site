@@ -17,12 +17,14 @@ module.exports = {
         node: {
           fields: {
             slug: '/test_0',
-            categorySlug: '/test'
           },
           frontmatter: {
             date: '2016-09-01',
             description: 'test_0',
-            category: 'test',
+            tags: [
+              'test-1',
+              'test-2'
+            ],
             title: 'test_0'
           }
         }
@@ -31,12 +33,14 @@ module.exports = {
         node: {
           fields: {
             slug: '/test_1',
-            categorySlug: '/test'
           },
           frontmatter: {
             date: '2016-09-01',
             description: 'test_1',
-            category: 'test',
+            tags: [
+              'test-1',
+              'test-2'
+            ],
             title: 'test_1'
           }
         }
