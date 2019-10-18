@@ -4,6 +4,8 @@ exports[`Copyright renders correctly 1`] = `
 <div
   className="copyright"
 >
-  copyright
+  <p>
+    copyright
+  </p>
 </div>
 `;

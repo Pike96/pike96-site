@@ -8,7 +8,9 @@ type Props = {
 
 const Copyright = ({ copyright }: Props) => (
   <div className={styles['copyright']}>
-    {copyright}
+    {copyright.split('\n').map((item, i) => {
+      return <p>{item}</p>;
+    })}
   </div>
 );
 

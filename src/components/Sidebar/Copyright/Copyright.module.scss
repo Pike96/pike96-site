@@ -4,4 +4,10 @@
 .copyright {
   color: lighten($color-gray, 18%);
   font-size: $typographic-small-font-size;
+
+  p {
+    @include margin-top(0);
+    @include margin-bottom(0);
+    line-height: $typographic-base-font-size * 1.29;
+  }
 }

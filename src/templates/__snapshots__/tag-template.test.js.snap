@@ -258,7 +258,9 @@ exports[`TagTemplate renders correctly 1`] = `
         <div
           className="copyright"
         >
-          Test copyright
+          <p>
+            Test copyright
+          </p>
         </div>
       </div>
     </div>
