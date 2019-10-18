@@ -20,7 +20,7 @@ const Feed = ({ edges }: Props) => (
           </time>
           <span className={styles['feed__item-meta-divider']} />
           <span className={styles['feed__item-meta-tag']}>
-            {edge.node.frontmatter.tags.map((tag) => (
+            {edge.node.frontmatter.tags && edge.node.frontmatter.tags.map((tag) => (
               <Link to={`/tag/${kebabCase(tag)}`} className={styles['feed__item-meta-tag-link']}>{tag}</Link>
             ))}
           </span>

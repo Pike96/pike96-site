@@ -17,7 +17,7 @@ const Author = () => {
           rel="noopener noreferrer"
           target="_blank"
         >
-          Ping me on Facebook
+          Ping <strong>{author.name}</strong> on Facebook
         </a>
       </p>
     </div>

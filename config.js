@@ -6,7 +6,7 @@ module.exports = {
   title: 'Pike96',
   subtitle: 'Front-End Engineer @ Los Angeles',
   copyright: '© All rights reserved.',
-  disqusShortname: '',
+  disqusShortname: 'pike96',
   postsPerPage: 5,
   googleAnalyticsId: 'UA-149749640-1',
   useKatex: false,

@@ -101,6 +101,14 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
+          {
+            resolve: 'gatsby-remark-code-buttons',
+            options: {
+              buttonText: 'Copy',
+              toasterText: 'Copied',
+              toasterDuration: 1500,
+            }
+          },
           'gatsby-remark-relative-images',
           {
             resolve: 'gatsby-remark-katex',
@@ -124,6 +132,7 @@ module.exports = {
           {
             resolve: 'gatsby-remark-prismjs',
             options: {
+              classPrefix: 'language-',
               showLineNumbers: true,
             }
           },

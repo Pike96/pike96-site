@@ -14,7 +14,11 @@ exports[`Author renders correctly 1`] = `
       rel="noopener noreferrer"
       target="_blank"
     >
-      Ping me on Facebook
+      Ping 
+      <strong>
+        Test name
+      </strong>
+       on Facebook
     </a>
   </p>
 </div>

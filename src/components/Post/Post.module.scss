@@ -50,12 +50,18 @@
     }
 
     &__home-button {
+      color: $color-primary;
       font-family: $typographic-header-font-family;
       position: fixed;
       max-width: auto;
       margin: 0;
       top: 30px;
-      left: 30px
+      left: 30px;
+
+      &:hover {
+        color: $color-secondary;
+      }
+
     }
 
   }

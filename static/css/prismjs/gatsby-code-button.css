@@ -1,0 +1,26 @@
+.gatsby-code-button-container {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    pointer-events: none;
+    top: -0.2em;
+    height: 0;
+}
+div[class='gatsby-code-button'] {
+    margin-right: 2.3em;
+    width: 2.5em;
+    opacity: .35;
+}
+
+.gatsby-code-button:after {
+    opacity: 0;
+}
+.gatsby-code-button:hover {
+    opacity: .7;
+}
+.gatsby-code-button-icon {
+    display: none;
+}
+.gatsby-code-button-toaster {
+    position: fixed;
+}
