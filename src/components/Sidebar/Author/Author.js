@@ -1,37 +1,23 @@
 // @flow strict
 import React from 'react';
-import { withPrefix, Link } from 'gatsby';
+import { Link } from 'gatsby';
 import styles from './Author.module.scss';
 
 type Props = {
   author: {
-    name: string,
     bio: string,
-    photo: string
-  },
-  isIndex: ?boolean
+  }
 };
 
-const Author = ({ author, isIndex }: Props) => (
+const Author = ({ author }: Props) => (
   <div className={styles['author']}>
     <Link to="/">
-      <div className={styles['author__name-and-photo']}>
-        <img
-          src={withPrefix(author.photo)}
-          className={styles['author__photo']}
-          width="75"
-          height="75"
-          alt={author.name}
-        />
-        { isIndex === true ? (
-          <h1 className={styles['author__title']}>
-            <Link className={styles['author__title-link']} to="/">{author.name}</Link>
-          </h1>
-        ) : (
-          <h2 className={styles['author__title']}>
-            <Link className={styles['author__title-link']} to="/">{author.name}</Link>
-          </h2>
-        )}
+      <div className={styles['author__typewriter']}>
+        <div className={styles['author__typewriter-static']}>&#60;&#169;</div>
+        <div className={styles['author__typewriter-dynamic']}>
+          <div className={styles['author__typewriter-dynamic-text']}>ike|`</div>
+        </div>
+        <div className={styles['author__typewriter-static']}>&#62;</div>
       </div>
     </Link>
 

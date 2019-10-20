@@ -1,0 +1,43 @@
+/**
+ * Animations
+ */
+
+@mixin typewriter($length, $interval, $blinkInterval) {
+  animation: typing $interval steps($length, end) infinite, blinkLine $blinkInterval step-end infinite;
+}
+
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+@include keyframes(typing) {
+  0%, 30%, 90%, 100% {
+    width: 0;
+  }
+  40%, 80% {
+    width: 100%;
+  }
+}
+
+@include keyframes(blinkLine) {
+  from, to {
+    border-color: transparent
+  }
+  50% {
+    border-color: $color-white;
+  }
+}

@@ -20,25 +20,27 @@ exports[`PageTemplate renders correctly 1`] = `
             href="/"
           >
             <div
-              className="author__name-and-photo"
+              className="author__typewriter"
             >
-              <img
-                alt="Test name"
-                className="author__photo"
-                height="75"
-                src="/test.jpg"
-                width="75"
-              />
-              <h2
-                className="author__title"
+              <div
+                className="author__typewriter-static"
               >
-                <a
-                  className="author__title-link"
-                  href="/"
+                &lt;©
+              </div>
+              <div
+                className="author__typewriter-dynamic"
+              >
+                <div
+                  className="author__typewriter-dynamic-text"
                 >
-                  Test name
-                </a>
-              </h2>
+                  ike|\`
+                </div>
+              </div>
+              <div
+                className="author__typewriter-static"
+              >
+                &gt;
+              </div>
             </div>
           </a>
           <p

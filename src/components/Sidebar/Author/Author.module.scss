@@ -37,4 +37,35 @@
     @include margin-bottom(1)
   }
 
+  &__typewriter {
+    font-family: $typographic-pike-font-family;
+    font-size: 62px;
+    color: $color-white;
+    background-color: $color-primary;
+    height: 6.5rem;
+    text-align: center;
+
+    box-shadow: inset 5px 2px 4px 2px rgba(0, 0, 0, 0.06);
+    border-radius: $button-border-radius;
+
+    &-static, &-dynamic {
+      display: inline-block;
+    }
+
+    &-dynamic {
+      margin-right: -.1rem;
+
+      &-text {
+        display: inline-block;
+        overflow: hidden;
+        @include typewriter(5, 6s, 0.3s);
+        white-space: nowrap;
+        //border-right: 4px solid $color-white;
+        box-sizing: border-box;
+        height: 4.1rem;
+      }
+    }
+
+  }
+
 }

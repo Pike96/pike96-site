@@ -6,11 +6,8 @@ import Author from './Author';
 describe('Author', () => {
   const props = {
     author: {
-      name: 'test',
-      photo: '/photo.svg',
       bio: 'test'
-    },
-    isIndex: false
+    }
   };
 
   it('renders correctly', () => {
