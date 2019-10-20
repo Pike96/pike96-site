@@ -13,6 +13,11 @@ const Author = ({ author }: Props) => (
   <div className={styles['author']}>
     <Link to="/">
       <div className={styles['author__typewriter']}>
+        <div className={styles['author__typewriter-topbar']}>
+          <div className={styles['author__typewriter-topbar-white']} />
+          <div className={styles['author__typewriter-topbar-grey']} />
+          <div className={styles['author__typewriter-topbar-red']} />
+        </div>
         <div className={styles['author__typewriter-static']}>&#60;&#169;</div>
         <div className={styles['author__typewriter-dynamic']}>
           <div className={styles['author__typewriter-dynamic-text']}>ike|`</div>
