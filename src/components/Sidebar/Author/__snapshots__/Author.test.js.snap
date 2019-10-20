@@ -11,9 +11,17 @@ exports[`Author renders correctly 1`] = `
       className="author__typewriter"
     >
       <div
-        className="author__typewriter-static"
+        className="author__typewriter-topbar"
       >
-        &lt;©
+        <div
+          className="author__typewriter-topbar-white"
+        />
+        <div
+          className="author__typewriter-topbar-grey"
+        />
+        <div
+          className="author__typewriter-topbar-red"
+        />
       </div>
       <div
         className="author__typewriter-dynamic"
@@ -23,11 +31,6 @@ exports[`Author renders correctly 1`] = `
         >
           ike|\`
         </div>
-      </div>
-      <div
-        className="author__typewriter-static"
-      >
-        &gt;
       </div>
     </div>
   </a>
