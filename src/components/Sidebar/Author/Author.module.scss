@@ -71,23 +71,25 @@
         width: 16%;
       }
     }
-
-    &-static, &-dynamic {
-      display: inline-block;
-    }
-
     &-dynamic {
-      margin-left: -.1rem;
+      display: inline-block;
 
       &-text {
         display: inline-block;
         overflow: hidden;
         @include typewriter(5, 6s, 0.3s);
         letter-spacing: -.1rem;
-        white-space: nowrap;
         //border-right: 4px solid $color-white;
         box-sizing: border-box;
         height: 4.2rem;
+      }
+
+      &:before {
+        content: '<©'; // <p
+      }
+      &:after {
+        content: '>';
+        margin-left: -.1rem;
       }
     }
 
