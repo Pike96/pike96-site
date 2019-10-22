@@ -1,6 +1,6 @@
 // @flow strict
-const getRandomItemFromArray = (array) => (array && array.length
+const getRandomItemFromStrArray = (array: string[]) => (array && array.length
   ? array[Math.floor(Math.random() * array.length)]
   : null);
 
-export default getRandomItemFromArray;
+export default getRandomItemFromStrArray;

@@ -1,4 +1,4 @@
 // @flow strict
 export { default as getIcon } from './get-icon';
 export { default as getContactHref } from './get-contact-href';
-export { default as getRandomItemFromArray } from './get-random-index-for-array';
+export { default as getRandomItemFromStrArray } from './get-random-index-for-array';

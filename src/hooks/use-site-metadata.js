@@ -34,7 +34,8 @@ const useSiteMetadata = () => {
             title
             subtitle
             copyright
-            disqusShortname
+            disqusShortname,
+            sentences
           }
         }
       }

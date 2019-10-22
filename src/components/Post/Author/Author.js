@@ -1,27 +1,17 @@
 // @flow strict
 import React from 'react';
-import { getContactHref, getRandomItemFromArray } from '../../../utils';
+import { getContactHref, getRandomItemFromStrArray } from '../../../utils';
 import styles from './Author.module.scss';
 import { useSiteMetadata } from '../../../hooks';
 
 const Author = () => {
-  const { author } = useSiteMetadata();
-  const sentenceArr: Array<string> = [
-    'Nothing is true, everything is permitted',
-    'Stay angry, stay selfish',
-    'Thus, when Heaven is about to confer a great office on any man, '
-    + 'it first exercises his mind with suffering, and his sinews and bones with toil. '
-    + 'It exposes his body to hunger, and subjects him to extreme poverty. '
-    + 'It confounds his undertakings. '
-    + 'By all these methods it stimulates his mind, hardens his nature, '
-    + 'and supplies his incompetencies.'
-  ];
+  const { author, sentences } = useSiteMetadata();
 
   return (
     <div className={styles['author']}>
       <p className={styles['author__bio']}>
         <span className={styles['author__bio-sentence']}>
-          {getRandomItemFromArray(sentenceArr)}
+          {getRandomItemFromStrArray(sentences)}
         </span>
         <a
           className={styles['author__bio-twitter']}

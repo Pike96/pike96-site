@@ -35,7 +35,12 @@ module.exports = {
           rss: '#',
           vkontakte: '#'
         }
-      }
+      },
+      sentence: [
+        'Test sentence 1.',
+        'Test sentence 2.',
+        'Test sentence 3.'
+      ]
     }
   }
 };

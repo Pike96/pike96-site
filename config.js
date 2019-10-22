@@ -34,5 +34,19 @@ module.exports = {
       gitlab: '',
       weibo: ''
     }
-  }
+  },
+  sentences: [
+    'Nothing is true, everything is permitted.',
+    'Stay angry, stay selfish.',
+    'Most truths are useless, in order to achieve universal correctness.',
+    'War. War never changes.',
+    'Question any proposition before asking why.',
+    'Your aesthetic ability is always under-trained. Jump out of your comfort zone.',
+    'Thus, when Heaven is about to confer a great office on any man, '
+    + 'it first exercises his mind with suffering, and his sinews and bones with toil. '
+    + 'It exposes his body to hunger, and subjects him to extreme poverty. '
+    + 'It confounds his undertakings. '
+    + 'By all these methods it stimulates his mind, hardens his nature, '
+    + 'and supplies his incompetencies.'
+  ]
 };
