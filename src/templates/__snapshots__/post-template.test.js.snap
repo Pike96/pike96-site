@@ -80,7 +80,11 @@ exports[`PostTemplate renders correctly 1`] = `
         <p
           className="author__bio"
         >
-          Test bio
+          <span
+            className="author__bio-sentence"
+          >
+            Thus, when Heaven is about to confer a great office on any man, it first exercises his mind with suffering, and his sinews and bones with toil. It exposes his body to hunger, and subjects him to extreme poverty. It confounds his undertakings. By all these methods it stimulates his mind, hardens his nature, and supplies his incompetencies.
+          </span>
           <a
             className="author__bio-twitter"
             href="https://www.facebook.com/undefined"

@@ -10,6 +10,10 @@
   @include margin-bottom(2);
 
   &__bio {
+    &-sentence {
+      color: $color-gray;
+    }
+
     &-twitter {
       display: block;
       text-decoration: underline;

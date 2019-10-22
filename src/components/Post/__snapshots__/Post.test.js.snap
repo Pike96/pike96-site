@@ -77,7 +77,11 @@ exports[`Post renders correctly 1`] = `
       <p
         className="author__bio"
       >
-        Test bio
+        <span
+          className="author__bio-sentence"
+        >
+          Nothing is true, everything is permitted
+        </span>
         <a
           className="author__bio-twitter"
           href="https://www.facebook.com/undefined"
