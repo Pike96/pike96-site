@@ -2,7 +2,9 @@
 @import '../../assets/scss/mixins';
 
 .sidebar {
+    margin-top: $topbar-height;
     width: 100%;
+
     &__inner {
         position: relative;
         padding: 25px 20px 0;

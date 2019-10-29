@@ -1,0 +1,32 @@
+@import '../../assets/scss/variables';
+@import '../../assets/scss/mixins';
+
+.topbar {
+  position: fixed;
+  height: 2.5rem;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: $color-primary;
+  opacity: 0.5;
+
+  &__keyword {
+    margin: auto;
+    color: $color-white;
+
+    font-family: Monospace;
+    font-size: 22px;
+    line-height: 36px;
+    color: $color-white;
+    background-color: $color-primary;
+    text-align: center;
+  }
+}
+
+@include breakpoint-sm {
+
+}
+
+@include breakpoint-md {
+
+}

@@ -3,6 +3,7 @@
 
 .page {
   @include margin-bottom(2);
+  padding-top: $topbar-height;
 
   &__inner {
     padding: 25px 20px;

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Topbar renders correctly 1`] = `
+<div
+  className="topbar"
+>
+  <div
+    className="topbar__keyword"
+  >
+    &lt;pike96&gt;Mandolin&lt;/pike96&gt;
+  </div>
+</div>
+`;

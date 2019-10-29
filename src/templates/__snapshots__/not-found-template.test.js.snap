@@ -5,6 +5,15 @@ exports[`NotFoundTemplate renders correctly 1`] = `
   className="layout"
 >
   <div
+    className="topbar"
+  >
+    <div
+      className="topbar__keyword"
+    >
+      &lt;pike96&gt;Mandolin&lt;/pike96&gt;
+    </div>
+  </div>
+  <div
     className="sidebar"
   >
     <div

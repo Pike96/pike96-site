@@ -102,5 +102,14 @@ exports[`PostTemplate renders correctly 1`] = `
       className="post__comments"
     />
   </div>
+  <div
+    className="topbar"
+  >
+    <div
+      className="topbar__keyword"
+    >
+      &lt;pike96&gt;Mandolin&lt;/pike96&gt;
+    </div>
+  </div>
 </div>
 `;
