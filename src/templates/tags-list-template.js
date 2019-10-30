@@ -14,7 +14,7 @@ const TagsListTemplate = () => {
 
   return (
     <Layout title={`Tags - ${title}`} description={subtitle}>
-      <Topbar />
+      <Topbar hasSidebar/>
       <Sidebar />
       <Page title="Tags">
         <ul>

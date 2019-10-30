@@ -16,8 +16,12 @@ describe('Topbar', () => {
     );
   });
 
+  const props = {
+    hasSidebar: false
+  };
+
   it('renders correctly', () => {
-    const tree = renderer.create(<Topbar />).toJSON();
+    const tree = renderer.create(<Topbar {...props} />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

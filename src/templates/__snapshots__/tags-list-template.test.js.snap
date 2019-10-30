@@ -8,7 +8,7 @@ exports[`TagsListTemplate renders correctly 1`] = `
     className="topbar"
   >
     <div
-      className="topbar__keyword"
+      className="topbar__keyword-with-sidebar"
     >
       &lt;pike96&gt;
       <span

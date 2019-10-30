@@ -8,13 +8,13 @@ exports[`IndexTemplate renders correctly 1`] = `
     className="topbar"
   >
     <div
-      className="topbar__keyword"
+      className="topbar__keyword-with-sidebar"
     >
       &lt;pike96&gt;
       <span
         className="topbar__keyword-inner"
       >
-        Test keyword 1.
+        Test keyword 3.
       </span>
       &lt;/pike96&gt;
     </div>
