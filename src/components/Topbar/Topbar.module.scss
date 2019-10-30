@@ -8,15 +8,14 @@
   top: 0;
   left: 0;
   background: $color-primary;
-  opacity: 0.5;
 
   &__keyword {
     margin: auto;
     color: $color-white;
-
     font-family: monospace;
     font-size: 22px;
-    line-height: 36px;
+    height: $topbar-height;
+    line-height: $topbar-height;
     background-color: $color-primary;
     text-align: center;
   }

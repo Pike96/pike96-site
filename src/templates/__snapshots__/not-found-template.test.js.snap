@@ -11,7 +11,11 @@ exports[`NotFoundTemplate renders correctly 1`] = `
       className="topbar__keyword"
     >
       &lt;pike96&gt;
-      Test keyword 2.
+      <span
+        className="topbar__keyword-inner"
+      >
+        Test keyword 2.
+      </span>
       &lt;/pike96&gt;
     </div>
   </div>

@@ -8,7 +8,11 @@ exports[`Topbar renders correctly 1`] = `
     className="topbar__keyword"
   >
     &lt;pike96&gt;
-    Test keyword 3.
+    <span
+      className="topbar__keyword-inner"
+    >
+      Test keyword 3.
+    </span>
     &lt;/pike96&gt;
   </div>
 </div>

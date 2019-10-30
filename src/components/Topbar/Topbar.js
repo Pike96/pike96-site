@@ -9,7 +9,11 @@ const Topbar = () => {
   return (
     <div className={styles['topbar']}>
       <div className={styles['topbar__keyword']}>
-        &lt;pike96&gt;{getRandomItemFromStrArray(keywords)}&lt;/pike96&gt;
+        &lt;pike96&gt;
+        <span className={styles['topbar__keyword-inner']}>
+          {getRandomItemFromStrArray(keywords)}
+        </span>
+        &lt;/pike96&gt;
       </div>
     </div>
   );

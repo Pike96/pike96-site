@@ -38,7 +38,7 @@ module.exports = {
   keywords: [
     'Browser Extension', 'Mandolin', 'Bodybuilding', 'New Wave', 'Chipotle Thursday',
     'Everton F.C.', 'Fallout & Elder Scrolls', 'BWV 1001-1007', 'We are all witnesses',
-    'Preparing ACE Personal Trainer'
+    'Fight On', 'No hate', 'I love LA'
   ],
   sentences: [
     'Nothing is true, everything is permitted.',
