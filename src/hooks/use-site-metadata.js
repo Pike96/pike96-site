@@ -35,6 +35,7 @@ const useSiteMetadata = () => {
             subtitle
             copyright
             disqusShortname,
+            keywords,
             sentences
           }
         }

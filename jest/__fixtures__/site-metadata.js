@@ -36,6 +36,11 @@ module.exports = {
           vkontakte: '#'
         }
       },
+      keywords: [
+        'Test keyword 1.',
+        'Test keyword 2.',
+        'Test keyword 3.'
+      ],
       sentence: [
         'Test sentence 1.',
         'Test sentence 2.',

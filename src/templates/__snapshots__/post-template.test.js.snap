@@ -108,7 +108,9 @@ exports[`PostTemplate renders correctly 1`] = `
     <div
       className="topbar__keyword"
     >
-      &lt;pike96&gt;Mandolin&lt;/pike96&gt;
+      &lt;pike96&gt;
+      Test keyword 2.
+      &lt;/pike96&gt;
     </div>
   </div>
 </div>

@@ -1,12 +1,18 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import styles from './Topbar.module.scss';
+import { useSiteMetadata } from '../../hooks';
+import { getRandomItemFromStrArray } from '../../utils';
 
-const Topbar = () => (
-  <div className={styles['topbar']}>
-    <div className={styles['topbar__keyword']}>
-      &lt;pike96&gt;Mandolin&lt;/pike96&gt;
+const Topbar = () => {
+  const { keywords } = useSiteMetadata();
+
+  return (
+    <div className={styles['topbar']}>
+      <div className={styles['topbar__keyword']}>
+        &lt;pike96&gt;{getRandomItemFromStrArray(keywords)}&lt;/pike96&gt;
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default Topbar;

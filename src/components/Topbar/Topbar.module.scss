@@ -14,19 +14,10 @@
     margin: auto;
     color: $color-white;
 
-    font-family: Monospace;
+    font-family: monospace;
     font-size: 22px;
     line-height: 36px;
-    color: $color-white;
     background-color: $color-primary;
     text-align: center;
   }
-}
-
-@include breakpoint-sm {
-
-}
-
-@include breakpoint-md {
-
 }
