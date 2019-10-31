@@ -37,14 +37,10 @@ module.exports = {
         }
       },
       keywords: [
-        'Test keyword 1.',
-        'Test keyword 2.',
-        'Test keyword 3.'
+        'Test keyword 1',
       ],
       sentence: [
         'Test sentence 1.',
-        'Test sentence 2.',
-        'Test sentence 3.'
       ]
     }
   }

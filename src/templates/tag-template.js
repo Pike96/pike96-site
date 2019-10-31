@@ -32,7 +32,7 @@ const TagTemplate = ({ data, pageContext }: Props) => {
 
   return (
     <Layout title={pageTitle} description={siteSubtitle}>
-      <Topbar hasSidebar/>
+      <Topbar/>
       <Sidebar />
       <Page title={tag}>
         <Feed edges={edges} />

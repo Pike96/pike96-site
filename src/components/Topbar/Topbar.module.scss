@@ -8,15 +8,60 @@
   top: 0;
   left: 0;
   background: $color-primary;
+  font-family: monospace;
+  font-size: 22px;
+  line-height: $topbar-height;
 
-  &__keyword {
+  &__keyword, &__keyword--in-post {
     margin: auto;
     color: $color-white;
-    font-family: monospace;
-    font-size: 22px;
     height: $topbar-height;
-    line-height: $topbar-height;
     background-color: $color-primary;
     text-align: center;
+  }
+
+  &__keyword--in-post {
+    display: none;
+  }
+
+  &__home-button {
+    display: block;
+    max-width: 150px;
+    height: $button-height;
+    padding: 0 12px;
+    text-align: center;
+    color: $color-white;
+    font-weight: normal;
+    margin: 0 auto;
+
+    &:before {
+      content: '< ';
+    }
+
+    &:hover,
+    &:focus {
+      color: $color-white;
+    }
+
+    &:hover::before,
+    &:focus::before {
+      content: '<= ';
+    }
+
+  }
+}
+
+@include breakpoint-md {
+  .topbar{
+    &__keyword--in-post {
+      display: block;
+    }
+
+    &__home-button {
+      position: fixed;
+      margin: 0;
+      top: 0;
+      left: 0;
+    }
   }
 }

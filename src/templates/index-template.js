@@ -32,7 +32,7 @@ const IndexTemplate = ({ data, pageContext }: Props) => {
 
   return (
     <Layout title={pageTitle} description={siteSubtitle}>
-      <Topbar hasSidebar/>
+      <Topbar/>
       <Sidebar isIndex />
       <Page>
         <Feed edges={edges} />

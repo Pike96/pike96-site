@@ -1,29 +1,28 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import styles from './Topbar.module.scss';
 import { useSiteMetadata } from '../../hooks';
 import { getRandomItemFromStrArray } from '../../utils';
 
 type Props = {
-  hasSidebar?: boolean,
+  inPost?: boolean,
 };
 
-const Topbar = ({ hasSidebar }: Props) => {
+const Topbar = ({ inPost }: Props) => {
   const { keywords } = useSiteMetadata();
 
   return (
     <div className={styles['topbar']}>
-      { hasSidebar === true ? (
-        // TODO: judge sidebar
-        <div className={styles[`topbar__keyword${hasSidebar ? '-with-sidebar' : ''}`]}>
-          &lt;pike96&gt;
-          <span className={styles['topbar__keyword-inner']}>
+      <div className={styles[`topbar__keyword${inPost ? '--in-post' : ''}`]}>
+        &lt;pike96&gt;
+        <span className={styles['topbar__keyword-inner']}>
             {getRandomItemFromStrArray(keywords)}
           </span>
-          &lt;/pike96&gt;
-        </div>
-      ) : (
-        <div className={styles['topbar__home-button']} />
-      )}
+        &lt;/pike96&gt;
+      </div>
+      { inPost === true
+        && <Link className={styles['topbar__home-button']} to="/">Home Page</Link>
+      }
     </div>
   );
 };

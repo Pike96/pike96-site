@@ -27,7 +27,7 @@ const PageTemplate = ({ data }: Props) => {
       <Page title={pageTitle}>
         <div dangerouslySetInnerHTML={{ __html: pageBody }} />
       </Page>
-      <Topbar hasSidebar/>
+      <Topbar/>
     </Layout>
   );
 };

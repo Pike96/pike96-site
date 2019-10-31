@@ -7,12 +7,6 @@ exports[`PostTemplate renders correctly 1`] = `
   <div
     className="post"
   >
-    <a
-      className="post__home-button"
-      href="/"
-    >
-      All Articles
-    </a>
     <div
       className="post__content"
     >
@@ -106,8 +100,22 @@ exports[`PostTemplate renders correctly 1`] = `
     className="topbar"
   >
     <div
+      className="topbar__keyword--in-post"
+    >
+      &lt;pike96&gt;
+      <span
+        className="topbar__keyword-inner"
+      >
+        Test keyword 1
+      </span>
+      &lt;/pike96&gt;
+    </div>
+    <a
       className="topbar__home-button"
-    />
+      href="/"
+    >
+      Home Page
+    </a>
   </div>
 </div>
 `;

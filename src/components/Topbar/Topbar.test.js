@@ -17,7 +17,7 @@ describe('Topbar', () => {
   });
 
   const props = {
-    hasSidebar: false
+    inPost: false,
   };
 
   it('renders correctly', () => {
