@@ -33,6 +33,7 @@
         &:hover,
         &:focus {
           color: $color-secondary;
+          box-shadow: initial;
         }
 
       }

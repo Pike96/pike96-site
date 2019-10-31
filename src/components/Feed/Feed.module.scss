@@ -30,7 +30,6 @@
 
     &-description {
       font-size: $typographic-small-font-size;
-      font-style: italic;
       @include line-height(1);
       @include margin-bottom(.75);
     }
@@ -62,6 +61,7 @@
           &:hover,
           &:focus {
             color: $color-primary;
+            box-shadow: initial;
           }
 
           //&:not(:last-child):after {

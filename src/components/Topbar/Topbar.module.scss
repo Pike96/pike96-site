@@ -7,16 +7,19 @@
   width: 100%;
   top: 0;
   left: 0;
-  background: $color-primary;
+  background: $color-white;
   font-family: monospace;
-  font-size: 22px;
+  font-size: $topbar-height * .6;
   line-height: $topbar-height;
+  border-bottom: $container-border;
+  box-shadow: $container-box-shadow;
+  z-index: map-get($z-index, topbar);
 
   &__keyword, &__keyword--in-post {
     margin: auto;
-    color: $color-white;
+    color: $color-primary;
     height: $topbar-height;
-    background-color: $color-primary;
+    background-color: $color-white;
     text-align: center;
   }
 
@@ -30,7 +33,7 @@
     height: $button-height;
     padding: 0 12px;
     text-align: center;
-    color: $color-white;
+    color: $color-primary;
     font-weight: normal;
     margin: 0 auto;
 
@@ -40,12 +43,12 @@
 
     &:hover,
     &:focus {
-      color: $color-white;
+      color: $color-primary;
     }
 
     &:hover::before,
     &:focus::before {
-      content: '<= ';
+      content: '<# ';
     }
 
   }
