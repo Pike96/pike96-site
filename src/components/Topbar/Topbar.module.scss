@@ -1,0 +1,70 @@
+@import '../../assets/scss/variables';
+@import '../../assets/scss/mixins';
+
+.topbar {
+  position: fixed;
+  height: 2.5rem;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: $color-white;
+  font-family: $typographic-header-font-family;
+  font-size: $topbar-height * .5;
+  line-height: $topbar-height;
+  border-bottom: $container-border;
+  box-shadow: $container-box-shadow;
+  z-index: map-get($z-index, topbar);
+
+  &__keyword, &__keyword--in-post {
+    margin: auto;
+    color: $color-primary;
+    height: $topbar-height;
+    background-color: $color-white;
+    text-align: center;
+  }
+
+  &__keyword--in-post {
+    display: none;
+  }
+
+  &__home-button {
+    display: block;
+    max-width: 150px;
+    height: $button-height;
+    padding: 0 12px;
+    text-align: center;
+    color: $color-primary;
+    font-weight: normal;
+    margin: 0 auto;
+
+    &:before {
+      content: '< ';
+    }
+
+    &:hover,
+    &:focus {
+      color: $color-primary;
+    }
+
+    &:hover::before,
+    &:focus::before {
+      content: '<# ';
+    }
+
+  }
+}
+
+@include breakpoint-md {
+  .topbar{
+    &__keyword--in-post {
+      display: block;
+    }
+
+    &__home-button {
+      position: fixed;
+      margin: 0;
+      top: 0;
+      left: 0;
+    }
+  }
+}

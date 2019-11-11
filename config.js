@@ -35,6 +35,11 @@ module.exports = {
       weibo: ''
     }
   },
+  keywords: [
+    'Browser Extension', 'Mandolin', 'Bodybuilding', 'New Wave', 'Chipotle Thursday',
+    'Everton F.C.', 'Fallout & Elder Scrolls', 'BWV 1001-1007', 'We are all witnesses',
+    'Fight On', 'No hate', 'I love LA'
+  ],
   sentences: [
     'Nothing is true, everything is permitted.',
     'Stay angry, stay selfish.',
@@ -48,5 +53,5 @@ module.exports = {
     + 'It confounds his undertakings. '
     + 'By all these methods it stimulates his mind, hardens his nature, '
     + 'and supplies his incompetencies.'
-  ]
+  ],
 };

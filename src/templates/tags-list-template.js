@@ -4,6 +4,7 @@ import { Link } from 'gatsby';
 import kebabCase from 'lodash/kebabCase';
 import Layout from '../components/Layout';
 import Sidebar from '../components/Sidebar';
+import Topbar from '../components/Topbar';
 import Page from '../components/Page';
 import { useSiteMetadata, useTagsList } from '../hooks';
 
@@ -13,6 +14,7 @@ const TagsListTemplate = () => {
 
   return (
     <Layout title={`Tags - ${title}`} description={subtitle}>
+      <Topbar/>
       <Sidebar />
       <Page title="Tags">
         <ul>

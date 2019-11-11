@@ -5,6 +5,21 @@ exports[`TagsListTemplate renders correctly 1`] = `
   className="layout"
 >
   <div
+    className="topbar"
+  >
+    <div
+      className="topbar__keyword"
+    >
+      &lt;pike96&gt;
+      <span
+        className="topbar__keyword-inner"
+      >
+        Test keyword 1
+      </span>
+      &lt;/pike96&gt;
+    </div>
+  </div>
+  <div
     className="sidebar"
   >
     <div
