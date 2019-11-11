@@ -67,7 +67,7 @@
       }
 
       &-red {
-        background-color: #f00;
+        background-color: lighten($color-primary, 10%);
         width: 16%;
       }
     }

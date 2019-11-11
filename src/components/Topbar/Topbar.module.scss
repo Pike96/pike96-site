@@ -8,8 +8,8 @@
   top: 0;
   left: 0;
   background: $color-white;
-  font-family: monospace;
-  font-size: $topbar-height * .6;
+  font-family: $typographic-header-font-family;
+  font-size: $topbar-height * .5;
   line-height: $topbar-height;
   border-bottom: $container-border;
   box-shadow: $container-box-shadow;
