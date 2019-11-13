@@ -5,24 +5,30 @@ import { useSiteMetadata } from '../../hooks';
 import { getRandomItemFromStrArray } from '../../utils';
 
 type Props = {
-  inPost?: boolean,
+  postTitle?: string,
 };
 
-const Topbar = ({ inPost }: Props) => {
+const Topbar = ({ postTitle }: Props) => {
   const { keywords } = useSiteMetadata();
 
   return (
     <div className={styles['topbar']}>
-      <div className={styles[`topbar__keyword${inPost ? '--in-post' : ''}`]}>
-        &lt;pike96&gt;
-        <span className={styles['topbar__keyword-inner']}>
-            {getRandomItemFromStrArray(keywords)}
-          </span>
-        &lt;/pike96&gt;
-      </div>
-      { inPost === true
-        && <Link className={styles['topbar__home-button']} to="/">Home Page</Link>
+      {/* Post title in post pages, keyword in other pages. */}
+      {postTitle
+        ? <div className={styles['topbar__keyword--in-post']}>
+          {postTitle}
+          </div>
+        : <div className={styles['topbar__keyword']}>
+            &lt;pike96&gt;
+            <span className={styles['topbar__keyword-inner']}>
+              {getRandomItemFromStrArray(keywords)}
+            </span>
+            &lt;/pike96&gt;
+          </div>
       }
+
+      {/* Home button only in post pages. */}
+      {postTitle && <Link className={styles['topbar__home-button']} to="/">Home Page</Link>}
     </div>
   );
 };

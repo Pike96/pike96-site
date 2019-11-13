@@ -26,13 +26,13 @@ exports[`PageTemplate renders correctly 1`] = `
                 className="author__typewriter-topbar"
               >
                 <div
-                  className="author__typewriter-topbar-white"
+                  className="author__typewriter-topbar-left"
                 />
                 <div
-                  className="author__typewriter-topbar-grey"
+                  className="author__typewriter-topbar-middle"
                 />
                 <div
-                  className="author__typewriter-topbar-red"
+                  className="author__typewriter-topbar-right"
                 />
               </div>
               <div

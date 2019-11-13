@@ -5,7 +5,7 @@
 // Colors
 $color-base: #333;
 $color-primary: #0099E5;
-$color-secondary: #0099E5;
+$color-secondary: #E86D76;
 
 $color-white: #FFF;
 $color-gray: lighten($color-base, 40%);
@@ -44,7 +44,7 @@ $layout-breakpoint-md: 960px;
 $layout-breakpoint-lg: 1100px;
 
 // Topbar
-$topbar-height: 2.5rem;
+$topbar-height: 2.7rem;
 
 $z-index: (
   topbar: 5,

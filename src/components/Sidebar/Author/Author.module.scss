@@ -56,18 +56,18 @@
       flex-direction: row;
       margin-bottom: -.2rem;
 
-      &-white {
+      &-left {
         background-color: lighten($color-primary, 30%);
         width: 42%;
       }
 
-      &-grey {
+      &-middle {
         background-color: lighten($color-primary, 20%);
         width: 42%;
       }
 
-      &-red {
-        background-color: lighten($color-primary, 10%);
+      &-right {
+        background-color: $color-secondary;
         width: 16%;
       }
     }

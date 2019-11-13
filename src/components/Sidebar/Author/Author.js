@@ -14,9 +14,9 @@ const Author = ({ author }: Props) => (
     <Link to="/">
       <div className={styles['author__typewriter']}>
         <div className={styles['author__typewriter-topbar']}>
-          <div className={styles['author__typewriter-topbar-white']} />
-          <div className={styles['author__typewriter-topbar-grey']} />
-          <div className={styles['author__typewriter-topbar-red']} />
+          <div className={styles['author__typewriter-topbar-left']} />
+          <div className={styles['author__typewriter-topbar-middle']} />
+          <div className={styles['author__typewriter-topbar-right']} />
         </div>
         <div className={styles['author__typewriter-dynamic']}>
           <div className={styles['author__typewriter-dynamic-text']}>ike|`</div>

@@ -3,11 +3,12 @@
 
 .topbar {
   position: fixed;
-  height: 2.5rem;
+  height: $topbar-height;
   width: 100%;
   top: 0;
   left: 0;
   background: $color-white;
+  color: $color-primary;
   font-family: $typographic-header-font-family;
   font-size: $topbar-height * .5;
   line-height: $topbar-height;
@@ -17,7 +18,6 @@
 
   &__keyword, &__keyword--in-post {
     margin: auto;
-    color: $color-primary;
     height: $topbar-height;
     background-color: $color-white;
     text-align: center;
@@ -33,7 +33,6 @@
     height: $button-height;
     padding: 0 12px;
     text-align: center;
-    color: $color-primary;
     font-weight: normal;
     margin: 0 auto;
 
@@ -43,14 +42,8 @@
 
     &:hover,
     &:focus {
-      color: $color-primary;
+      color: $color-secondary;
     }
-
-    &:hover::before,
-    &:focus::before {
-      content: '<# ';
-    }
-
   }
 }
 

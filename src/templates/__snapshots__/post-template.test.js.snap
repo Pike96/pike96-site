@@ -102,13 +102,7 @@ exports[`PostTemplate renders correctly 1`] = `
     <div
       className="topbar__keyword--in-post"
     >
-      &lt;pike96&gt;
-      <span
-        className="topbar__keyword-inner"
-      >
-        Test keyword 1
-      </span>
-      &lt;/pike96&gt;
+      test
     </div>
     <a
       className="topbar__home-button"
