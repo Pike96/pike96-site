@@ -317,13 +317,13 @@ exports[`IndexTemplate renders correctly 1`] = `
               >
                 <a
                   className="feed__item-meta-tag-link"
-                  href="/tag/test-1"
+                  href="/tag/test-1/"
                 >
                   test-1
                 </a>
                 <a
                   className="feed__item-meta-tag-link"
-                  href="/tag/test-2"
+                  href="/tag/test-2/"
                 >
                   test-2
                 </a>
@@ -365,13 +365,13 @@ exports[`IndexTemplate renders correctly 1`] = `
               >
                 <a
                   className="feed__item-meta-tag-link"
-                  href="/tag/test-1"
+                  href="/tag/test-1/"
                 >
                   test-1
                 </a>
                 <a
                   className="feed__item-meta-tag-link"
-                  href="/tag/test-2"
+                  href="/tag/test-2/"
                 >
                   test-2
                 </a>
