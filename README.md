@@ -2,6 +2,7 @@
 > Technical Blog by Pike96
 
 [![Build Status](https://travis-ci.com/Pike96/pike96-site.svg?branch=master)](https://travis-ci.com/Pike96/pike96-site)
+[![Test Coverage](coverage/badge.svg)](coverage/badge.svg)
 
 © 2019 Pike96. All rights reserved.
 
