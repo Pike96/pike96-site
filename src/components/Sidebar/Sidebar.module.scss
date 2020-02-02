@@ -50,6 +50,15 @@
             &-fixed {
                 position: fixed;
                 width: 35%;
+                max-height: calc(100% - 6rem);
+                overflow-y: scroll;
+                scrollbar-width: none;
+                -ms-overflow-style: none;
+
+                &::-webkit-scrollbar { /* WebKit */
+                    width: 0;
+                    height: 0;
+                }
 
                 &:after {
                     background: $color-gray-border;
