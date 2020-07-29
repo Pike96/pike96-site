@@ -5,7 +5,7 @@ module.exports = {
   pathPrefix: '/',
   title: 'Pike96',
   subtitle: 'Front-End Engineer @ Los Angeles',
-  copyright: '© 2019 Pike96. All rights reserved.\nPowered by gatsby-starter-lumen & Netlify.',
+  copyright: '© 2020 Pike96. All rights reserved.\nPowered by gatsby-starter-lumen & Netlify.',
   disqusShortname: 'pike96',
   postsPerPage: 5,
   googleAnalyticsId: 'UA-149749640-1',
