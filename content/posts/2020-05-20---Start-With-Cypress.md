@@ -21,13 +21,16 @@ Jest, Jasmine, Mocha, AVA, Tape, Selenium, Protractor, WebdriverIO, Nightwatch, 
 At this point of time (mid 2020), I find a great answer for huge chunks of code that doesn't have test code, after trying out some of them. My answer is [Cypress.io](https://www.cypress.io/).
 
 ## Easy to use
+
 - **Installation**:
+
 The installation is simple, you only have to add the package into your project. If you use test frameworks based on a webdriver like Selenium, you'll have some extra work to do to [download the right webdriver file](https://www.selenium.dev/downloads/) for your browser, and you have to worry about the version match between you webdriver and your browser. Cypress has everything built-in, no need to worry about these things. It will automatically find all compatible browsers on your machine.
 
 - **Interaction**
+
 After installed it, you can open its test runner, a simple electron app. It looks like this:
 
-![Cypress Test Runner](/media/cypress-test-runner.jpg)
+![Cypress Test Runner](/media/cypress-test-runner.png)
 
 Source: https://docs.cypress.io/guides/core-concepts/test-runner.html
 
@@ -54,14 +57,19 @@ These covers almost all what you want a test framework to do. For simple functio
 In my use case, I have a huge codebase with multiple JavaScript files and many independent pages. There was no any unit test or E2E test code in this repository. Here are some tips if you have similar situation as me:
 
 - **Start writing unit tests for utility functions**
+
 Cypress is also a great tool to write unit tests for your functions. It has concise grammar for you to write it, just like [Mocha](https://mochajs.org/). Adding test for utility functions can help you avoid those fundamental errors. Those ones are hard to trace back when you try to find the bug when the app is running.
+
 - **Write E2E tests for those unreadable code**
+
 If some pieces of the code has lots of deprecated parts, or isn't encapsulated well, it's a headache to write test for it. E2E tests are useful in this case. You can focus on the results of the code part and pay less attention to how it's done.
+
 - **Try to use TDD  when developing new functions**
+
 When you have a large codebase without test code and it runs well, usually it means the developers worked on it are very good at Behavior-Driven Development (BDD). By writing some tests using Cypress, you can try the Test-Driven Development (TDD) style. It will save you a lot of time for paying technical debts. It will be easier to balance these two styles of development when you writing new functions.
 
-## Reference:
-[https://docs.cypress.io/guides/](https://docs.cypress.io/guides/)
-[https://juejin.im/post/6844903970222112776](https://juejin.im/post/6844903970222112776)
-https://www.browserstack.com/guide/tdd-vs-bdd-vs-atdd
+## References:
+- [https://docs.cypress.io/guides/](https://docs.cypress.io/guides/)
+- [https://juejin.im/post/6844903970222112776](https://juejin.im/post/6844903970222112776)
+- [https://www.browserstack.com/guide/tdd-vs-bdd-vs-atdd](https://www.browserstack.com/guide/tdd-vs-bdd-vs-atdd)
 
