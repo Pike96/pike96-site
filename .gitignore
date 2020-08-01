@@ -6,6 +6,7 @@ npm-debug.log
 .gatsby-context.js
 .idea
 gatsby-starter-lumen.iml
+yarn-error.log
 
 coverage/*
 !coverage/badge.svg
