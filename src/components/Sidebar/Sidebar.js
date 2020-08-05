@@ -23,6 +23,7 @@ const Sidebar = ({ isIndex }: Props) => {
         <div className={styles['sidebar__inner-fixed']}>
           <Author author={author} isIndex={isIndex} />
           <Menu menu={menu} />
+          <Contacts contacts={author.contacts} />
           <ul className={styles['sidebar__tags-list']}>
             {tags.map((tag) => (
               <li className={styles['sidebar__tags-list-item']} key={tag.fieldValue}>
@@ -36,7 +37,6 @@ const Sidebar = ({ isIndex }: Props) => {
               </li>
             ))}
           </ul>
-          <Contacts contacts={author.contacts} />
           <Copyright copyright={copyright} />
         </div>
       </div>
