@@ -67,74 +67,6 @@ exports[`NotFoundTemplate renders correctly 1`] = `
             Test bio
           </p>
         </div>
-        <nav
-          className="menu"
-        >
-          <ul
-            className="menu__list"
-          >
-            <li
-              className="menu__list-item"
-            >
-              <a
-                className="menu__list-item-link"
-                href="/test/1/"
-              >
-                Test label 1
-              </a>
-            </li>
-            <li
-              className="menu__list-item"
-            >
-              <a
-                className="menu__list-item-link"
-                href="/test/2/"
-              >
-                Test label 2
-              </a>
-            </li>
-            <li
-              className="menu__list-item"
-            >
-              <a
-                className="menu__list-item-link"
-                href="/test/3/"
-              >
-                Test label 3
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <ul
-          className="sidebar__tags-list"
-        >
-          <li
-            className="sidebar__tags-list-item"
-          >
-            <a
-              className="sidebar__tags-list-item-link"
-              href="/tag/test-0/"
-            >
-              test_0
-               (
-              1
-              )
-            </a>
-          </li>
-          <li
-            className="sidebar__tags-list-item"
-          >
-            <a
-              className="sidebar__tags-list-item-link"
-              href="/tag/test-1/"
-            >
-              test_1
-               (
-              2
-              )
-            </a>
-          </li>
-        </ul>
         <div
           className="contacts"
         >
@@ -275,6 +207,74 @@ exports[`NotFoundTemplate renders correctly 1`] = `
             </li>
           </ul>
         </div>
+        <nav
+          className="menu"
+        >
+          <ul
+            className="menu__list"
+          >
+            <li
+              className="menu__list-item"
+            >
+              <a
+                className="menu__list-item-link"
+                href="/test/1/"
+              >
+                Test label 1
+              </a>
+            </li>
+            <li
+              className="menu__list-item"
+            >
+              <a
+                className="menu__list-item-link"
+                href="/test/2/"
+              >
+                Test label 2
+              </a>
+            </li>
+            <li
+              className="menu__list-item"
+            >
+              <a
+                className="menu__list-item-link"
+                href="/test/3/"
+              >
+                Test label 3
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <ul
+          className="sidebar__tags-list"
+        >
+          <li
+            className="sidebar__tags-list-item"
+          >
+            <a
+              className="sidebar__tags-list-item-link"
+              href="/tag/test-0/"
+            >
+              test_0
+               (
+              1
+              )
+            </a>
+          </li>
+          <li
+            className="sidebar__tags-list-item"
+          >
+            <a
+              className="sidebar__tags-list-item-link"
+              href="/tag/test-1/"
+            >
+              test_1
+               (
+              2
+              )
+            </a>
+          </li>
+        </ul>
         <div
           className="copyright"
         >
