@@ -19,17 +19,15 @@ const Feed = ({ edges }: Props) => (
             {moment(edge.node.frontmatter.date).format('MMMM YYYY')}
           </time>
           <span className={styles['feed__item-meta-divider']} />
-          <span className={styles['feed__item-meta-tag']}>
-            {edge.node.frontmatter.tags && edge.node.frontmatter.tags.map((tag, index) => (
-              <Link
-                to={`/tag/${kebabCase(tag)}/`}
-                className={styles['feed__item-meta-tag-link']}
-                key={index}
-              >
-                {tag}
-              </Link>
-            ))}
-          </span>
+          {edge.node.frontmatter.tags && edge.node.frontmatter.tags.map((tag, index) => (
+            <Link
+              to={`/tag/${kebabCase(tag)}/`}
+              className={styles['feed__item-meta-tag-link']}
+              key={index}
+            >
+              {tag}
+            </Link>
+          ))}
         </div>
         <h2 className={styles['feed__item-title']}>
           <Link className={styles['feed__item-title-link']} to={edge.node.fields.slug}>{edge.node.frontmatter.title}</Link>
