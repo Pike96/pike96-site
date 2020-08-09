@@ -317,22 +317,18 @@ exports[`TagTemplate renders correctly 1`] = `
               <span
                 className="feed__item-meta-divider"
               />
-              <span
-                className="feed__item-meta-tag"
+              <a
+                className="feed__item-meta-tag-link"
+                href="/tag/test-1/"
               >
-                <a
-                  className="feed__item-meta-tag-link"
-                  href="/tag/test-1/"
-                >
-                  test-1
-                </a>
-                <a
-                  className="feed__item-meta-tag-link"
-                  href="/tag/test-2/"
-                >
-                  test-2
-                </a>
-              </span>
+                test-1
+              </a>
+              <a
+                className="feed__item-meta-tag-link"
+                href="/tag/test-2/"
+              >
+                test-2
+              </a>
             </div>
             <h2
               className="feed__item-title"
@@ -365,22 +361,18 @@ exports[`TagTemplate renders correctly 1`] = `
               <span
                 className="feed__item-meta-divider"
               />
-              <span
-                className="feed__item-meta-tag"
+              <a
+                className="feed__item-meta-tag-link"
+                href="/tag/test-1/"
               >
-                <a
-                  className="feed__item-meta-tag-link"
-                  href="/tag/test-1/"
-                >
-                  test-1
-                </a>
-                <a
-                  className="feed__item-meta-tag-link"
-                  href="/tag/test-2/"
-                >
-                  test-2
-                </a>
-              </span>
+                test-1
+              </a>
+              <a
+                className="feed__item-meta-tag-link"
+                href="/tag/test-2/"
+              >
+                test-2
+              </a>
             </div>
             <h2
               className="feed__item-title"

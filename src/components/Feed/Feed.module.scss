@@ -12,7 +12,7 @@
     &-title {
       font-size: $typographic-base-font-size * 1.7875;
       @include line-height(1.5);
-      @include margin-top(.5);
+      @include margin-top(.2);
       @include margin-bottom(.5);
 
       &-link {
@@ -35,39 +35,39 @@
     }
 
     &-meta {
+      display: flex;
+      flex-wrap: wrap;
       &-time {
         font-size: $typographic-small-font-size;
         color: $color-base;
         font-weight: 600;
         text-transform: uppercase;
+        padding: 3px 0;
       }
 
       &-divider {
         margin: 0 5px;
       }
 
-      &-tag {
-        &-link {
-          font-size: $typographic-small-font-size;
-          color: $color-secondary;
-          font-weight: 600;
-          text-transform: uppercase;
-          border: 1px solid $color-gray-border;
-          border-radius: $small-button-border-radius;
-          box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
-          padding: 3px 9px;
-          margin: 0 5px;
+      &-tag-link {
+        font-size: $typographic-small-font-size;
+        color: $color-secondary;
+        font-weight: 600;
+        text-transform: uppercase;
+        border: 1px solid $color-gray-border;
+        border-radius: $small-button-border-radius;
+        box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+        padding: 3px 9px;
+        margin: 0 5px 6px;
 
-          &:hover,
-          &:focus {
-            box-shadow: initial;
-          }
-
-          //&:not(:last-child):after {
-          //  content: ' & ';
-          //}
+        &:hover,
+        &:focus {
+          box-shadow: initial;
         }
 
+        //&:not(:last-child):after {
+        //  content: ' & ';
+        //}
       }
 
     }
