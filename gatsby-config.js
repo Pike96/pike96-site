@@ -105,6 +105,22 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: 'gatsby-plugin-prefetch-google-fonts',
+            options: {
+              fonts: [
+                {
+                  family: 'Big Shoulders Text',
+                  subsets: ['latin'],
+                  variants: ['700'],
+                },
+                {
+                  family: 'Titillium Web',
+                  variants: ['400', '700'],
+                },
+              ],
+            },
+          },
+          {
             resolve: 'gatsby-remark-code-buttons',
             options: {
               buttonText: 'Copy',

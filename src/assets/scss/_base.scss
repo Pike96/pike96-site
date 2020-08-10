@@ -3,35 +3,6 @@
 @import "normalize-scss";
 @import "base/generic";
 
-/* titillium-web-regular - latin */
-@font-face {
-  font-family: 'Titillium Web';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Titillium Web Regular'), local('TitilliumWeb-Regular'),
-  url('../fonts/titillium-web-v8-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-  url('../fonts/titillium-web-v8-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* titillium-web-700 - latin */
-@font-face {
-  font-family: 'Titillium Web';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Titillium Web Bold'), local('TitilliumWeb-Bold'),
-  url('../fonts/titillium-web-v8-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-  url('../fonts/titillium-web-v8-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* big-shoulders-text-700 - latin */
-@font-face {
-  font-family: 'Big Shoulders Text';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Big Shoulders Text Bold'), local('BigShouldersText-Bold'),
-  url('../fonts/big-shoulders-text-v1-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-  url('../fonts/big-shoulders-text-v1-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
 @font-face {
   font-family: 'Pike';
   font-style: normal;
