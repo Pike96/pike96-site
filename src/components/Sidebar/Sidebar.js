@@ -28,7 +28,7 @@ const Sidebar = ({ isIndex }: Props) => {
             {tags.map((tag) => (
               <li className={styles['sidebar__tags-list-item']} key={tag.fieldValue}>
                 <Link
-                  to={`/tag/${kebabCase(tag.fieldValue)}/`}
+                  to={`/tag/${kebabCase(tag.fieldValue.toLowerCase())}/`}
                   className={styles['sidebar__tags-list-item-link']}
                   activeClassName={styles['sidebar__tags-list-item-link--active']}
                 >

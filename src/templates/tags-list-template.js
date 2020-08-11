@@ -20,7 +20,7 @@ const TagsListTemplate = () => {
         <ul>
           {tags.map((tag) => (
             <li key={tag.fieldValue}>
-              <Link to={`/tag/${kebabCase(tag.fieldValue)}/`}>
+              <Link to={`/tag/${kebabCase(tag.fieldValue.toLowerCase())}/`}>
                 {tag.fieldValue} ({tag.totalCount})
               </Link>
             </li>
