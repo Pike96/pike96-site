@@ -23,7 +23,7 @@ const onCreateNode = ({ node, actions, getNode }) => {
     }
 
     if (node.frontmatter.tags) {
-      const tagSlugs = node.frontmatter.tags.map((tag) => `/tag/${_.kebabCase(tag)}/`);
+      const tagSlugs = node.frontmatter.tags.map((tag) => `/tag/${_.kebabCase(tag.toLowerCase())}/`);
       createNodeField({ node, name: 'tagSlugs', value: tagSlugs });
     }
   }
