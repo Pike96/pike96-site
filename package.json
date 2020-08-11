@@ -8,7 +8,7 @@
     "build": "yarn run clean && gatsby build",
     "deploy": "yarn run clean && gatsby build --prefix-paths && gh-pages -d public",
     "clean": "rimraf .cache public",
-    "prepush": "yarn run test:update && yarn run test:badges && flow && yarn run lint",
+    "prepush": "yarn run test:update && yarn run test:badges && yarn run lint:js && yarn run lint:scss",
     "flow": "flow",
     "lint": "concurrently \"yarn run lint:js\" \"yarn run lint:scss\" \"yarn flow\"",
     "lint:fix": "eslint --fix ./ && stylelint --fix \"src/**/*.scss\"",
