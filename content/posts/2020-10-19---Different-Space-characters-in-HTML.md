@@ -14,7 +14,7 @@ The new iPhone 12 series is out. Have you compared it to the iPhone 11 series to
 
 ![iPhone 11 and 12 Compare Page in apples.com](/media/iphone-compare-whitespace-bug.png)
 
-The space between the phrase "spatial awareness" is different in iPhone 11 and 12. The two containers <p> elements' sizes and styles are the same. So the whitespace is the culprit.
+The space between the phrase "spatial awareness" is different in iPhone 11 and 12. The two `<p>` container elements' sizes and styles are the same. So the whitespace is the culprit.
 
 We can imagine that the new front-end developer just copied and pasted the whole field without checking the exact match between the contents. And there's no testing did find this problem. The consequence is that the user might think: "Oh these two fields are different. Is this an upgrade? No! They are the same words!" Well, we've got new proof of Apple is paying less attention to user experience...
 
