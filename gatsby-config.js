@@ -105,19 +105,21 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: 'gatsby-plugin-prefetch-google-fonts',
+            resolve: 'gatsby-plugin-webfonts',
             options: {
-              fonts: [
-                {
-                  family: 'Big Shoulders Text',
-                  subsets: ['latin'],
-                  variants: ['700'],
-                },
-                {
-                  family: 'Titillium Web',
-                  variants: ['400', '700'],
-                },
-              ],
+              fonts: {
+                google: [
+                  {
+                    family: 'Big Shoulders Text',
+                    subsets: ['latin'],
+                    variants: ['700'],
+                  },
+                  {
+                    family: 'Titillium Web',
+                    variants: ['400', '700'],
+                  },
+                ],
+              },
             },
           },
           {

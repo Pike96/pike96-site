@@ -1,5 +1,5 @@
 ---
-title: Must-Knows About Web Page Performance (Part I: Why And Rendering Optimization)
+title: Must-Knows About Web Page Performance (Part I Why And Rendering Optimization)
 date: "2020-12-16T15:42:24.136Z"
 template: "post"
 draft: false
@@ -18,9 +18,9 @@ This article will only cover topics about rendering for web page performance. It
 1.  **Improve User Retention & Conversion Rate**: Users are more impatient than you think. As the front end evolves, our web pages become more and more complex, and at the same time the web speed suffers. But users expect to use your site to accomplish something faster. If you provide a feature to the user, they will take it for granted that they will use it smoothly to achieve a certain goal. So they won't evaluate your site on the basis of whether the feature is completed or not. Instead, they will focus on the process of using it. (Reading: [Amazon Found Every 100ms of Latency Cost them 1% in Sales - GigaSpaces](https://www.gigaspaces.com/blog/amazon-found-every-100ms-of-latency-cost-them-1-in-sales))
 
 2. **Search Engines Care!** Despite all the scandals we hear about Google, they are really serving their users in this matter: Google, and other search engines, use website performance as an important metric to determine rankings in Search Engine Results Pages (SERP). It's hard to quantify the impact of these metrics on rankings, but Google has been increasingly reminding developers about them in recent years, so their impact cannot be underestimated. Google provides a great article about [Web Vitals](https://web.dev/vitals/) and Core Web Vitals. Belows are the images from the article which briefly describe the 3 Core Web Vitals from Google:
-   ![Largest Contentful Paint](/media/lcp.svg)
-   ![First Input Delay](/media/fid.svg)
-   ![Cumulative Layout Shift](/media/cls.svg)
+![Largest Contentful Paint](/media/lcp.svg)
+![First Input Delay](/media/fid.svg)
+![Cumulative Layout Shift](/media/cls.svg)
 
 ## [RAIL model](https://web.dev/rail/)
 
@@ -34,7 +34,7 @@ In addition to Google's own Web Vitals metrics, the RAIL model is commonly used 
 
 - Load: deliver content and become interactive in under 5 seconds
 
-## [Critical Rendering Path:](https://developers.google.com/web/fundamentals/performance/critical-rendering-path?hl=zh-cn)
+## [Critical Rendering Path](https://developers.google.com/web/fundamentals/performance/critical-rendering-path?hl=zh-cn)
 
 Here is the flow chart of Critical Rendering Path.
 
