@@ -146,22 +146,13 @@ module.exports = {
       }
     },
     {
-      resolve: 'gatsby-plugin-webfonts',
+      resolve: 'gatsby-plugin-google-fonts',
       options: {
-        fonts: {
-          google: [
-            {
-              family: 'Big Shoulders Text',
-              variants: ['700'],
-              subsets: ['latin'],
-            },
-            {
-              family: 'Titillium Web',
-              variants: ['400', '700'],
-            },
-          ],
-        },
-      },
+        fonts: [
+          'Big Shoulders Text:700',
+          'Titillium Web:400,700',
+        ]
+      }
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
