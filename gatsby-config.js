@@ -152,8 +152,8 @@ module.exports = {
           google: [
             {
               family: 'Big Shoulders Text',
-              subsets: ['latin'],
               variants: ['700'],
+              subsets: ['latin'],
             },
             {
               family: 'Titillium Web',
