@@ -105,22 +105,6 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: 'gatsby-plugin-prefetch-google-fonts',
-            options: {
-              fonts: [
-                {
-                  family: 'Big Shoulders Text',
-                  subsets: ['latin'],
-                  variants: ['700'],
-                },
-                {
-                  family: 'Titillium Web',
-                  variants: ['400', '700'],
-                },
-              ],
-            },
-          },
-          {
             resolve: 'gatsby-remark-code-buttons',
             options: {
               buttonText: 'Copy',
@@ -158,6 +142,15 @@ module.exports = {
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants',
           'gatsby-remark-external-links'
+        ]
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-google-fonts',
+      options: {
+        fonts: [
+          'Big Shoulders Text:700',
+          'Titillium Web:400,700',
         ]
       }
     },
